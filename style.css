@@ -1,0 +1,484 @@
+/*
+Theme Name:Cars Theme
+Theme URI: http://loclahos/wp1
+Author: Pawe� Kalisz
+Author URI: http://websitecreator.pl/
+Description:To jest tutorial samochody i motory 
+Version: 1.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: tu wpisac tagi
+
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: inline; }
+
+audio[controls], canvas, video { 
+	display: inline-block; 
+	*display: inline; 
+	*zoom: 1; }
+	
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none; }
+	
+table {
+	border-collapse: collapse;
+	border-spacing: 0; }
+
+
+/* 02 ::
+   LAYOUT */
+	#content-container{
+		float:left;
+	}
+
+#outer-wrap {
+	width: 800px;
+	margin: 0 auto; }
+
+#header-container, #main-container, #footer-container {
+	width: 100%; 
+	float: left; }
+
+#header-container {
+	/*margin-top: 30px; */}
+
+#content-container {
+	width: auto;
+	height: auto;
+	
+	/*width: 500px;*/
+	padding:10px;}
+
+#content-comment{
+	background-color: #D2691E;
+}
+.coment{
+	background-color: #D2691E;
+}
+
+	
+	/*********************mainnn****************************/
+#main-container{
+	width: auto;
+	height: auto;
+	margin-bottom: 0px;
+	}
+	
+/*sekcja odpowiedzilana za wyglad menu*/
+	body > header nav ul.menu > li{
+    float: left;
+    position: relative;
+}
+
+body > header nav ul li a{
+    display: block;
+    font-family: 'MuseoSlab500Regular';
+    font-size: 14px;
+    color: #ff803f;
+    text-transform: uppercase;
+}
+
+body > header nav ul.menu > li > a{
+    padding: 35px 35px 0px;
+    height: 41px;
+}
+
+body > header nav ul.menu > li.current-menu-item > a,
+body > header nav ul.menu > li.current-menu-parent > a{
+    background: #f55b0c;
+    color: #170901;
+}
+
+body > header nav li > a:hover{
+    -moz-opacity: 0.70;
+    -khtml-opacity: 0.70;
+    opacity: 0.70;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=70);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+}
+
+body > header nav ul.menu > li.current-menu-item > a:hover,
+body > header nav ul.menu > li.current-menu-parent > a:hover{
+    -moz-opacity: 1.00;
+    -khtml-opacity: 1.00;
+    opacity: 1.00;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=100);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+}
+
+
+body > header nav ul.menu li:hover .sub-menu{
+    display: block;
+}
+
+body > header nav ul li .sub-menu{
+    background: #170901; 
+    position: absolute;
+    display: none;
+    top: 76px;
+    left: 0px;
+    z-index: 10;
+    width: 288px;
+}
+
+body > header nav .sub-menu li a{
+    display: block;
+    padding-left: 75px;
+    padding-top: 22px;
+    height: 38px;
+    background-position: 12px 5px;
+    background-repeat: no-repeat;
+    margin: 0px 28px;
+    border-bottom: 1px dashed #3e1c09;
+}
+
+
+body > header nav .sub-menu li.wszystkie{
+    margin: 0px;
+}
+
+body > header nav .sub-menu li.wszystkie a{
+    background: #f55b0c;
+    padding: 5px 0px 0px;
+    height: 26px;
+    color: #230e02;
+    margin: 0px;
+    border: 0px;
+    text-align: center;
+}
+
+body > header nav .sub-menu li.wszystkie a span{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url('../img/submenu-icon-all.png') no-repeat;
+    border: 0px;
+    text-indent: -999em;
+    position: relative;
+    top: 2px;
+    margin-left: 5px;
+}
+ 
+/*koniec sekcji odpowiedzilanej za wyglad menu*/
+
+	
+.post {
+	margin-bottom: 30px; }
+
+.post p {
+	margin-bottom: 16px; }
+
+.widget-container {
+	margin-bottom: 30px; }*/
+
+
+/* 03 :: 
+   TYPOGRAPHY */
+   
+body, #site-title {
+	font-family: Georgia, "Adobe Garamond", "Times New Roman", serif; }
+
+#post-title, h2, h3, h4, h5, h6, .menu {
+	font-family: Helvetica, Arial, sans-serif; }
+
+#site-title {
+	margin-bottom: 10px; 
+	font-size: 42px;
+	font-weight: 100;
+	font-variant: small-caps; }
+
+#site-description {
+	margin-bottom: 30px; 
+	font-family: Georgia, "Adobe Garamond", "Times New Roman", serif;
+	font-size: 18px;
+	font-style: italic;
+	font-weight: 100;
+	color: #777; }
+
+.post p {
+	font-size: 16px;
+	line-height: 22px;
+	color: #222; }
+
+.entry-title {
+	margin-bottom: 5px;
+	font-size: 24px; }
+
+.post h2 {}
+.post h3 {}
+.post h4 {}
+.post h5 {}
+.post h6 {}
+
+
+
+p.entry-meta, #footer-container p, .widget-container {
+	font-size: 14px; }
+
+p.entry-meta, #sidebar-container, #footer-container {
+	color: #666; }
+
+#footer-container p {
+	text-align: right;
+	font-style: italic; }
+
+.menu {
+	font-size: 12px;
+	font-weight: 900;
+	text-transform: uppercase; }
+
+
+/* 04 ::
+   LINKS */
+
+a:link, a:active, a:visited {
+	color: #409fff; }
+
+a:hover {
+	color: #900; 
+	text-decoration: none; }
+
+.menu a {
+	text-decoration: none; }
+
+
+/* 05 ::
+   LISTS */
+
+.post ul, .post ol {
+	margin-bottom: 20px;
+	margin-left: 45px; }
+
+.post ul li {
+	list-style: square;
+	margin-bottom: 5px; }
+
+.post ol li {
+	list-style: decimal;
+	margin-bottom: 5px; }
+	
+	
+	/*moj wlasnu kod*/
+	#header-container{
+	background-color: #AC581A;
+}
+
+#footer-container{
+	background: Gray;
+}
+	
+
+
+
+
+
+/* The following styles are only used for the styling of the demo page */
+
+p.tzine{
+	text-align:center;
+	font-size:12px;
+	margin:50px;
+}
+
+p.credit{
+	text-align:center;
+	color:#888;
+	font-size:10px;
+}
+
+p.credit a,
+p.credit a:visited{
+	color:#ccc;
+	border-bottom-color:#aaa;
+}
+
+p.credit a:hover{
+	border-bottom-color:transparent;
+}
+
+a, a:visited {
+	text-decoration:none;
+	outline:none;
+	border-bottom:1px dotted #97cae6;
+	color:#97cae6;
+}
+
+a:hover{
+	border-bottom:1px dashed transparent;
+}
+
+.clear{
+	clear:both;
+}
+
+	
+
+
+
+
+
+
+/*stylizacja komentarzy strona g��wna*/
+
+
+.coment{
+   padding:10px;
+	float:left;
+ }
+ .coment p{
+ text-align:center;
+ }
+ .content-comment{
+   width:100%;
+	height:auto;
+	background:#D2691E;
+	padding: 0px;
+	}
+ /*koniec stylizacji komentarzy strona g��wna*/
+ 
+ 
+ 
+ /*stylizacja komentarzy w pojedynczych wpisach*/
+#div-comment-21 p{/*pwowduje zmiane tylko w komentarzu do restaracji szostej trzeba poszukac inncyh sposobow*/
+ 	padding:5px;
+ }
+#respond p{
+	padding:5px;
+}
+form label{
+   visibility:hidden;
+	padding:5px;
+}
+form textarea{
+   margin-left:-88px;
+	padding: 5px;
+	}
+p.form-allowed-tags{
+	visibility: hidden;
+}
+.comment-body p{
+	padding:5px;
+}
+.comment-meta.commentmetadata{padding:5px;
+	width:auto;
+}
+.comment-meta.commentmetadata a{
+   text-align:left;
+	padding: 5px;
+	font-size: 15px;
+	}
+.comment-form-email label{
+	visibility: visible;
+}
+.comment-form-author label{
+	visibility: visible;
+}
+.comment-form-url label{
+	visibility: visible;
+}
+div.reply{
+	width:auto;
+	padding:15px;
+	}
+	h3#reply-title.comment-reply-title{
+   padding:10px;
+	}
+
+ /*KONIEC*/
+ 
+	
+	
+/*stylizacja footer*/
+.menufooter{
+   float:left;
+	padding:75px;
+ }
+ .menufooter ul li{
+	font-size: large;
+	padding: 3px;
+}
+#footer-container{
+clear:both;
+margin-top:0px;
+float:left;
+width:100%;
+	padding:5px;
+
+}
+section.tag-cloud p{
+	font-size:25px;
+}
+/*sidebar*/
+#sidebar-container{
+   display:inline;
+   float: right;
+	width: 350px;
+	min-height:800px;
+	
+
+	
+}
+
+#search-2{
+   margin-top:20px;
+	float:left;
+	
+}
+#s
+{float:left;
+	padding:1px;}
+}	
+#searchsubmit{
+	float:left;
+	padding:5px;
+}
+/***********widget*/
+.widgettitle{
+	padding:15px;
+}
+page_item page-item-23{
+	padding:10px;
+}
+page_item page-item-9{
+	padding:10px;
+}
+
+
+
+
+
